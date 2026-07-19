@@ -63,3 +63,9 @@ ul{
 .show-sidebar{
     transform: translateX(0);
 }
+
+@media screen and (max-width:799px){
+    img{
+        width: auto;
+    }
+}
