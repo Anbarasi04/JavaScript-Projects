@@ -68,7 +68,7 @@ Live Demo: https://anbarasi04.github.io/JavaScript-Projects/Scroll
 ## 📝 Paragraph Generator
 Generate random Lorem Ipsum paragraphs instantly based on the number selected by the user.
 
-Live Demo: https://anbarasi04.github.io/JavaScript-Projects/Lorem Ipsum
+Live Demo: https://anbarasi04.github.io/JavaScript-Projects/Lorem%20Ipsum
 ---
 ## 🛒 Grocery List App
 A CRUD application to add, edit, delete, and manage grocery items with local storage support.
