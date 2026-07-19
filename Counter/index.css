@@ -1,0 +1,45 @@
+:root{
+    --font-family: sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter{
+    height: 150px;
+    min-width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 4px 5px 5px purple;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#action-btns{
+    display: flex;
+    gap: 10px;
+}
+
+button:hover{
+    border: 1px solid orange;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 5px;
+}

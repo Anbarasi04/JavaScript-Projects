@@ -1,0 +1,94 @@
+:root{
+    --font-family: sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rev-cont{
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    gap: 10px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.underline{
+    border-top: 2px solid skyblue;
+    width: 60px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+button{
+    cursor: pointer;
+}
+
+.review{
+    display: flex;
+    max-width: 300px;
+    padding: 10px;
+    height: 300px;
+    box-shadow: 2px 4px 5px 8px lightgray;
+    font-size: 11px;
+    border-radius: 2px;
+    border: 2px solid lightgray;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-cont{
+    height: 100px;
+    width: 100px;
+    background-color: skyblue;
+    padding: 3px 7px 0px 0px;
+    border-radius: 50%;
+}
+
+#per-img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+#role{
+    color: skyblue;
+    font-weight: bold;
+}
+
+.prev-btn, .next-btn{
+    padding: 5px 10px;
+}
+
+#info{
+    text-align: center;
+    line-height: 1.6;
+}
+
+.button-container {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.random-btn{
+    border-radius: 5px;
+    background-color: skyblue;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+}

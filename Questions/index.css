@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --font-family: sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgray;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h2{
+    font-family: "Great Vibes", cursive;
+    color: #c59d5f;
+}
+
+.question-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2px;
+    gap: 10px;
+    padding: 15px;
+}
+
+.question-btn{
+    border: none;
+    cursor: pointer;
+    background: none;
+    padding: 4px;
+}
+
+.question{
+    border-radius: 5px;
+    max-width: 600px;
+    width: 90%;
+    background-color: white;
+}
+
+hr{
+    display: none;
+}
+
+.show-text hr{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.question-text{
+    background-color: white;
+    padding: 15px;
+    border-radius: 2px;
+}
+
+.question-title p{
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    text-transform: 2px;
+}
+
+.question-text{
+    display: none;
+}
+
+.show-text .question-text{
+    display: block;
+}
+
+.minus-icon{
+    display: none;
+}
+
+.show-text .minus-icon{
+    display: inline;
+}
+
+.show-text .plus-icon{
+    display: none;
+}

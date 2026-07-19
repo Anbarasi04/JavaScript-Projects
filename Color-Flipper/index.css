@@ -1,0 +1,41 @@
+:root{
+    --font-family: sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-flip{
+    text-align: center;
+}
+
+button{
+    background-color: none;
+    padding: 4px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container{
+    height: 150px;
+    min-width: 400px;
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}

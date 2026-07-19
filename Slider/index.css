@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.slider-container{
+    border: 5px solid rgb(2, 55, 75);
+    width: 80vw;
+    max-width: 80rem;
+    margin: 0 auto;
+    height: 40vh;
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: grid;
+    overflow: hidden;
+    place-items: center;
+    text-align: center;
+    background-color: rgb(171, 207, 221);
+}
+
+.person-img{
+    border-radius: 50%;
+    height: 50px;
+    object-fit: cover;
+}
+
+.slide h1{
+    color: white;
+    position: absolute;
+}
+
+img{
+    display: block;
+}
+
+.slide-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-container{
+    display: flex;
+    padding: 1rem;
+    gap: 20px;
+}
+
+.prevBtn, .nextBtn{
+    padding: 0.75rem;
+    border-color: blue;
+    cursor: pointer;
+    border-radius: 7px;
+}

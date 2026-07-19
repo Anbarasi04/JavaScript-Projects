@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+h3{
+    text-align: center;
+}
+
+.section-center{
+    margin: 0 auto;
+    width: 70%;
+    max-width: 30rem;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.submit-btn{
+    cursor: pointer;
+}
+
+.form-control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+    padding: 1rem;
+}
+
+.form-control input, .form-control button{
+    padding: 7px;
+    border-radius: 5px;
+}
+
+#grocery{
+    background-color: hsl(210, 36%, 96%);
+    border: 1px solid transparent;
+    outline: none;
+    flex: 1;
+}
+
+#grocery:focus{
+    border-color: hsl(205, 86%, 50%);
+}
+
+.form-control button{
+     border-color: transparent;
+     background-color: hsl(205, 86%, 81%);
+     padding-left: 0.25rem;
+}
+
+.grocery-form{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding: 1rem;
+}
+
+.grocery-container{
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+    justify-content: center;
+}
+
+.show-container{
+    visibility: visible;
+}
+
+.clear-btn{
+    background: none;
+    padding: 0.25rem;
+    border: none;
+    cursor: pointer;
+    color: red;
+}
+
+.alert{
+    height: 1.25rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 0.7rem;
+    border-radius: 0.25rem;
+}
+
+.alert-danger{
+    color: #721c24;
+    background-color: #f8d7da;
+}
+
+.alert-success{
+    color: #155724;
+    background-color: #d4edda;
+}
+
+.grocery-item{
+    display: flex;
+    width: 100%;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.edit-btn, .del-btn{
+    font-size: 1rem;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    background: none;
+}
+
+.edit-btn{
+    color: green;
+}
+
+.del-btn{
+    color: red;
+}
+
+.grocery-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,225 @@
+:root{
+    --clr-white: white;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+header{
+    background:url("../public/mount.jpg") center/cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav{
+    background: var(--clr-white);    
+    padding: 10px;
+}
+
+.fixed-nav{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+    background: var(--clr-white);
+    width: 100%; 
+}
+
+.fixed-nav a{
+    color: black;
+}
+
+.links li{
+    padding: 10px;
+}
+
+.nav-header{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links-container{
+    height:0;
+    background-color: var(--clr-white);
+    overflow:hidden;
+}
+
+.show-links{
+    height: 200px;
+}
+
+.top-link{
+    visibility: hidden;
+    z-index: -100;
+    color: white;
+    position: absolute;
+    right: 5px;
+    animation: bounce 1s infinite;
+}
+
+.show-link{
+    visibility: visible;
+    z-index: 100;
+}
+
+.logo{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.banner{
+    min-height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center; 
+}
+
+.container{
+    color:white;
+    max-width: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.container p{
+    text-align: center;
+}
+
+.container a{
+    padding: 10px 10px;
+    border: 1px solid white;
+    color: white;
+    margin: 10px auto;
+    width: 35%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-toggle{
+    font-size: 1.5rem;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.cont{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.section{
+    height: 80vh;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+#about, #tours{
+  background: rgba(135, 206, 250, 0.15);
+}
+
+#services{
+    background-color: white;
+}
+
+.section-title h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section span{
+   color: aquamarine;
+}
+
+footer a{
+    background-color: aquamarine;
+    border-radius: 3px;
+    font-size: 11px;
+    padding: 2px;
+    border: none;
+}
+
+@media screen and (min-width:800px){
+     .nav-toggle{
+        display: none;
+     }
+
+     a{
+        color: white;
+        font-weight: bold;
+     }
+
+     .top-link{
+        right: 15px;
+     }
+
+     .nav-center{
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+     }
+
+     nav{
+        background: transparent;
+     }
+
+     .links-container{
+        height: auto !important;
+        background: transparent;
+     }
+
+    .links{
+        display:flex;
+        gap:30px;
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    background-color: black;
+    color: white;
+    justify-content: center;
+}
+
+footer p{
+    padding: 15px;
+}
+
+@keyframes bounce{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
