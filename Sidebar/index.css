@@ -6,6 +6,9 @@
 
 .toggle-btn{
     float: right;
+    font-size: 2rem;
+    border: none;
+    background: none;
     position: relative;
     padding: 5px;
     z-index: 1000;
