@@ -80,6 +80,9 @@ ul{
 
     .nav-toggle{
         display: flex;
+        font-size: 24px;
+        border: none;
+        border-radius: 7px;
     }
 }
 

@@ -29,13 +29,11 @@ button{
 }
 
 .container{
-    height: 150px;
-    min-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     border-radius: 10px;
     padding: 15px;
-    border: 2px solid lightgray;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    gap: 16px;
+    border: 2px solid orangered;
+    place-items: center;
 }

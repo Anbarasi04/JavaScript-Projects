@@ -16,16 +16,13 @@ body{
 }
 
 .counter{
-    height: 150px;
-    min-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 20px;
-    display: flex;
-    flex-direction: column;
+    border-radius: 5px;
     box-shadow: 2px 4px 5px 5px purple;
     border: 1px solid lightblue;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: space-around;
+    place-items: center;
 }
 
 #action-btns{
@@ -42,4 +39,10 @@ button{
     cursor: pointer;
     border-radius: 4px;
     padding: 5px;
+}
+
+@media screen and (max-width:799px) {
+    .counter{
+       min-width: 300px;
+    }
 }

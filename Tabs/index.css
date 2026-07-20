@@ -64,6 +64,7 @@ h2{
 
 .title{
     display: flex;
+    text-align: center;
     flex-direction: column;
 }
 
